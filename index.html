@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Simples</title>
+</head>
+<body>
+  <h1 id="titulo">Olá, mundo!</h1>
+
+  <p id="paragrafo">Este é um parágrafo simples.</p>
+
+  <input type="text" id="caixaTexto" placeholder="Digite algo aqui">
+
+  <button onclick="modificarTexto()">Clique aqui</button>
+
+  <script>
+    function modificarTexto() {
+      const valorDigitado = document.getElementById("caixaTexto").value;
+      document.getElementById("titulo").textContent = "Novo Título!";
+      document.getElementById("paragrafo").textContent = "Você digitou: " + valorDigitado;
+    }
+  </script>
+</body>
+</html>
