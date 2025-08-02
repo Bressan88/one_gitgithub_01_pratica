@@ -7,15 +7,15 @@
 <body>
   <h1 id="titulo">Olá, mundo!</h1>
 
-  <p id="paragrafo">Este é um parágrafo simples, editado pelo Bressan.</p>
+  <p id="paragrafo">Este é um parágrafo simples. Aqui irá aparecer o que você digitar.</p>
 
   <input type="text" id="caixaTexto" placeholder="Digite algo aqui">
 
-  <button onclick="modificarTexto()">Clique aqui</button>
+  <button onclick="modificarTexto()">CLIQUE AQUI</button>
 
   <script>
     function modificarTexto() {
-      alert("Você clicou no botão! Muito bem!");
+      console.log("Você clicou no botão! Muito bem!");
       const valorDigitado = document.getElementById("caixaTexto").value;
       document.getElementById("titulo").textContent = "Novo Título!";
       document.getElementById("paragrafo").textContent = "Você digitou: " + valorDigitado;
